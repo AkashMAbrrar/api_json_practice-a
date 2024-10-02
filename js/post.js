@@ -17,6 +17,7 @@ function disPlatPosts(posts) {
 
   for (const post of posts) {
     const Postdiv = document.createElement("div");
+    Postdiv.classList.add("post");
     Postdiv.innerHTML = `
     <h4>User- ${post.userId}</h4>
     <h5>post title: ${post.title} </h5>
